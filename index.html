@@ -25,92 +25,89 @@
                 Use these 3 properties to create a Flexbox row layout
             </article>
             <code>
-                <p>
                     .row{
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
                     }
-                </p>
             </code>
         </section>
 
         <section>
             <h2>Flexbox Column</h2>
             <article>
-                
+                Use this to create a Flexbox column layout
             </article>
             <code>
-                <p>
                     .column {
                         display: flex;
                         flex-direction: column
                     }
-                </p>
+            </code>
         </section>
     
         <section>
-            <h2>Flexbox Row</h2>
+            <h2>CSS Grid Layout</h2>
             <article>
-                
+                Build a 12-column layout using CSS Grid
             </article>
             <code>
-                <p>
-                    .row{
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
-                </p>
+                .grid {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns:
+                    repeat (12, 1fr)
+                }
+            </code>
         </section>
     
         <section>
-            <h2>Flexbox Row</h2>
+            <h2>Linear Gradients</h2>
             <article>
-                
+                This will create a background linear gradient from top to bottom
             </article>
             <code>
-                <p>
-                    .row{
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
-                </p>
+                    .linear-gradient-background(
+                        background-imate: linear-gradient(
+                            rgba (232, 102, 236, 0.3) 0%
+                            rgba (232, 102, 236, 0.6) 100%
+                        );
+                    )
         </section>
     
         <section>
-            <h2>Flexbox Row</h2>
+            <h2>Box Transition Glow</h2>
             <article>
-                
+                Use transition and box shadows to glow on hover
             </article>
             <code>
-                <p>
-                    .row{
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
-                </p>
+                .code-card .card-header {
+                    border-radius: 8px;
+                    transition: all 0.5s ease-in-out;
+                }
+                .code-card:hover, .code-card:hover .card-header {
+                    box-shadow: inset 0px 0px 8px rgba (232, 102, 236, 1). 0 0 15px rgba (232, 102, 236, 1)
+                }
+            </code>
         </section>
 
         <section>
-            <h2>Flexbox Row</h2>
+            <h2>Overlay Card with Title</h2>
             <article>
-                
+                Use position propertise and negative margins to raise elements higher than their natural starting points.
             </article>
         </section>
         <code>
-            <p>
-                .row{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                }
-            </p>
+            .card-header {
+                position: relative;
+                margin-top: -20px;
+              }
+        </code>
     </main>
 
     <footer>
+        <h3>Made with 🦖 ❤️ and CSS</h3>
+        <h4>By Jeff and Mari</h4>
     </footer>
 
 </body>
