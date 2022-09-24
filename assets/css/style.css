@@ -15,8 +15,9 @@ p {
 }
 
 main{
-    display:flex;
-    flex:wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header{
@@ -48,16 +49,43 @@ footer{
 
 figure{
     display:flex;
-    justify-content: space-between;
+    flex-direction:column;
     align-items: center;
-    flex-wrap: wrap;
     border: 2px white dotted;
     z-index: 0;
 }
 
-.linear-gradient{
-    display:flex;
-    display:block;
+section {
     flex-wrap: wrap;
+    flex: 1, 0, 180px;
+    width: 32%;
+}
+
+figure article {
+    color: white;
+    font-size: 80%;
+}
+
+pre {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+}
+
+.linear-gradient{
+    flex-wrap: wrap;
+    overflow: auto;
     background-image: linear-gradient(rgb(255, 200, 21),rgb(123, 53, 253));
+}
+
+@media screen and (max-width: 992px) {
+    section{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section{
+        width: 100%;
+    }
 }
