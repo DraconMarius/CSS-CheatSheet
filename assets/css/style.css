@@ -3,7 +3,7 @@
 }
 
 *{
-    background-color: rgb(53, 53, 53);
+    background-color:rgb(50, 33, 66);
     box-sizing: border-box;
     font-family: Georgia;
     margin:5px;
@@ -37,7 +37,7 @@ h2{
 
 h1{
     color: orange;
-    font-size: 150%;
+    font-size: 300%;
     font-weight: bolder;
 }
 
@@ -63,19 +63,36 @@ section {
 
 figure article {
     color: white;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 pre {
-    display: flex;
     flex: 1;
+    align-items: center;
     max-width: 100%;
+    min-height:  170px;
+    
+}
+
+section h2 {
+    font-weight:bold;
+    font-size: 200%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+figure:hover, section:hover h2 {
+    box-shadow: inset 1px 0px 25px 
+rgb(255, 172, 83), 0 0 20px
+rgb(129, 78, 248);
 }
 
 .linear-gradient{
-    flex-wrap: wrap;
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    user-select: all;
     overflow: auto;
-    background-image: linear-gradient(rgb(255, 200, 21),rgb(123, 53, 253));
+    background-image: linear-gradient(rgba(255, 138, 21, 0.889),rgb(189, 154, 254));
 }
 
 @media screen and (max-width: 992px) {
