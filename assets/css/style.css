@@ -67,11 +67,11 @@ figure article {
 }
 
 pre {
-    flex-direction: column;
     flex: 1;
     align-items: center;
     max-width: 100%;
     min-height:  170px;
+    
 }
 
 section h2 {
@@ -88,6 +88,9 @@ rgb(129, 78, 248);
 }
 
 .linear-gradient{
+    -moz-user-select: all;
+    -webkit-user-select: all;
+    user-select: all;
     overflow: auto;
     background-image: linear-gradient(rgba(255, 138, 21, 0.889),rgb(189, 154, 254));
 }
