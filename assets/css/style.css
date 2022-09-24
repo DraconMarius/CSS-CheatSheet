@@ -3,15 +3,20 @@
 }
 
 *{
-    background-color: grey;
+    background-color: rgb(53, 53, 53);
     box-sizing: border-box;
     font-family: Georgia;
-    margin:10px;
-    padding:10px;
+    margin:5px;
+    padding:5px;
+}
+
+p {
+    color: white;
 }
 
 main{
     display:flex;
+    flex:wrap;
 }
 
 header{
@@ -20,34 +25,39 @@ header{
 }
 
 h2{
+    text-align: center;
     border: 2px solid white;
     color: orange;
+    z-index: 1;
+    position: relative;
+    top:20px;
+    scale: 90%;
 }
 
 h1{
     color: orange;
     font-size: 150%;
     font-weight: bolder;
-
 }
 
 footer{
     color: orange;
     font-size: 80%;
+    text-align: center;
 }
 
-section{
+figure{
     display:flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-style: dotted;
-    border: 2px white;
+    border: 2px white dotted;
+    z-index: 0;
 }
 
 .linear-gradient{
     display:flex;
     display:block;
     flex-wrap: wrap;
-    background-image: linear-gradient(orange,blue);
+    background-image: linear-gradient(rgb(255, 200, 21),rgb(123, 53, 253));
 }
